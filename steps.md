@@ -37,6 +37,23 @@ For Raspberry Pi [(32-bit OS)](https://docs.docker.com/engine/install/raspberry-
   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
   ```
 - Add the current user to the docker user group:
-  > sudo usermod -aG docker $USER
+  ```
+  sudo usermod -aG docker $USER
+  ```
+  
+- Test if docker is working:
+  ```
+  docker run hello-world
+  ```
+
+Once we have docker installed on our machine(s) we can begin setting up different containers for Ollama and OpenWebUI
+
+## Step 2. Setting up Ollama in Docker:
+
+Ollama is a lightweight framework designed to build and run LLMs(Large Language Models) on your local machine. Ollama provides a simple API for running, creating, and managing LLMs. Ollama ships with the ability to download, run, and modify a large number of open source models such as Deepseek, Llama, Mistral, etc.
+
+After installing docker, we will install Ollama to deploy a smaller Deepseek Model:
+
+- 
 
   
